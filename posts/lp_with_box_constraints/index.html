@@ -12,19 +12,12 @@
     <link rel="stylesheet" href="../../css/pygentize.css" />
     <link rel="stylesheet" href="../../css/chao-theorems.css">
     <link rel="stylesheet" href="../../css/sidenotes.css">
-    <script defer src="../../css/pangu.simple.js"></script>
     <script>
         // page title
         document.addEventListener("DOMContentLoaded", function () {
             const hostname = window.location.hostname;
             document.title = document.title + " | " + hostname;
         });
-
-        // pangu
-        document.addEventListener('DOMContentLoaded', () => {
-            pangu.autoSpacingPage();
-        });
-
         // mathjax
         MathJax = {
             options: {
@@ -101,7 +94,7 @@
             Tags: <a title="All pages tagged 'optimization'." href="../../tags/optimization/index.html" rel="tag">optimization</a>, <a title="All pages tagged 'LP'." href="../../tags/LP/index.html" rel="tag">LP</a>
         
     </div>    
-    <section>
+    <section class="body">
         In <span class="citation" data-cites="chalermsook_approximating_2022">[<a href="#ref-chalermsook_approximating_2022" role="doc-biblioref">1</a>]</span> the following edge-connectivity
 related problem is studied.
 <div class="theorem-environment Problem" data-index="1" type="Problem">
@@ -142,9 +135,11 @@ constraints. I will call the first LP boxLP and the second one
 boxlessLP. Any feasible solution to the boxLP is also feasible in the
 boxlessLP. For any <span class="math inline">\(x_e&gt;1\)</span> in a
 feasible solution of boxlessLP, we consider those cuts containing <span class="math inline">\(e\)</span>. For such a cut <span class="math inline">\(C\)</span>, <span class="math inline">\(\sum_{f\in
-C\setminus e} x_f\geq k-1\)</span> and thus <span class="math inline">\(\sum_{e\in C} x_e&gt;1\)</span>. Since this holds
+C\setminus e} x_f\geq k-1\)</span> and thus <span class="math inline">\(\sum_{e\in C} x_e&gt;k\)</span>. Since this holds
 for any cut <span class="math inline">\(C\)</span> containing <span class="math inline">\(e\)</span>, we can certainly decrease <span class="math inline">\(x_e\)</span> for a smaller objective. Hence, in
 the optimal solution to boxlessLP, every <span class="math inline">\(x_e\)</span> is less than or equal to 1.
+<p></p>
+Kent Quanrud also used this technique in <span class="math inline">\(k\)</span>-cut LP <span class="citation" data-cites="Quanrud_2019">[<a href="#ref-Quanrud_2019" role="doc-biblioref">2</a>]</span>.
 <p></p>
 In fact, one can see from the proof that enumerating all singletons
 <span class="math inline">\(F=\set{f}\)</span> is sufficient.
@@ -162,6 +157,11 @@ k-<span>Edge</span>-<span>Connected</span> <span>Spanning</span>
 <span>Programming</span> (<span>ICALP</span> 2022)</em>, Schloss
 Dagstuhl – Leibniz-Zentrum für Informatik, Dagstuhl, Germany, 2022: pp.
 37:1–37:20 <a href="https://doi.org/10.4230/LIPIcs.ICALP.2022.37">10.4230/LIPIcs.ICALP.2022.37</a>.</div>
+</div>
+<div id="ref-Quanrud_2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">K.
+Quanrud, Fast and deterministic approximations for k-cut, <em>LIPIcs,
+Volume 145, APPROX/RANDOM 2019</em>. 145 (2019) 23:1–23:20 <a href="https://doi.org/10.4230/LIPICS.APPROX-RANDOM.2019.23">10.4230/LIPICS.APPROX-RANDOM.2019.23</a>.</div>
 </div>
 </div>
     </section>

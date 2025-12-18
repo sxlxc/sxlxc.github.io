@@ -12,19 +12,12 @@
     <link rel="stylesheet" href="../../css/pygentize.css" />
     <link rel="stylesheet" href="../../css/chao-theorems.css">
     <link rel="stylesheet" href="../../css/sidenotes.css">
-    <script defer src="../../css/pangu.simple.js"></script>
     <script>
         // page title
         document.addEventListener("DOMContentLoaded", function () {
             const hostname = window.location.hostname;
             document.title = document.title + " | " + hostname;
         });
-
-        // pangu
-        document.addEventListener('DOMContentLoaded', () => {
-            pangu.autoSpacingPage();
-        });
-
         // mathjax
         MathJax = {
             options: {
@@ -101,7 +94,7 @@
             Tags: <a title="All pages tagged 'alg'." href="../../tags/alg/index.html" rel="tag">alg</a>, <a title="All pages tagged 'typography'." href="../../tags/typography/index.html" rel="tag">typography</a>
         
     </div>    
-    <section>
+    <section class="body">
         Recently, Typst has merged a <a href="https://github.com/typst/typst/pull/6161">PR</a> which includes
 support for <a href="https://typst.app/blog/2025/typst-0.14#character-level-justification">character-level
 justification</a>. This feature is an extension to the linebreak

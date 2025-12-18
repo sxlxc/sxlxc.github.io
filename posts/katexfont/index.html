@@ -12,19 +12,12 @@
     <link rel="stylesheet" href="../../css/pygentize.css" />
     <link rel="stylesheet" href="../../css/chao-theorems.css">
     <link rel="stylesheet" href="../../css/sidenotes.css">
-    <script defer src="../../css/pangu.simple.js"></script>
     <script>
         // page title
         document.addEventListener("DOMContentLoaded", function () {
             const hostname = window.location.hostname;
             document.title = document.title + " | " + hostname;
         });
-
-        // pangu
-        document.addEventListener('DOMContentLoaded', () => {
-            pangu.autoSpacingPage();
-        });
-
         // mathjax
         MathJax = {
             options: {
@@ -120,7 +113,7 @@
             Tags: <a title="All pages tagged 'katex'." href="../../tags/katex/index.html" rel="tag">katex</a>
         
     </div>    
-    <section>
+    <section class="body">
         <blockquote>
 <p></p>
 现在有一个半成品可用 <a href="https://github.com/congyu711/KaTeX" class="uri">https://github.com/congyu711/KaTeX</a>
@@ -145,8 +138,10 @@ fonts提取的. 然后<code>dockers/fonts/buildMetrics.sh</code> 调用
 <code>src/metrics</code>里面的代码,直接从有关的tfm文件里读一些metric信息.
 <p></p>
 (我猜)生成的ttf,woff2等字体是保存 unicode -&gt; (字形+一些信息)
-这个映射关系的文件. <code>src/metrics/mapping.pl</code> 就是从tex
-math到unicode的映射. 做完这个输出这样的东西
+这个映射关系的文件.
+<p></p>
+<code>src/metrics/mapping.pl</code> 就是从tex math到unicode的映射.
+做完这个输出这样的东西
 <div class="sourceCode" id="cb1"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="er">...</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;AMS-Regular&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
@@ -246,11 +241,11 @@ reader? 不过我不觉得这样做就能让screen reader正确读出公式.
 <p></p>
 但是我觉得最常用的LP, SDP之类的规划问题显示起来效果还不错
 <figure>
-<img src="../../images/katexfont/sdptest.png" alt="XeLaTeX 使用 firamath" />
-<figcaption aria-hidden="true">XeLaTeX 使用 firamath</figcaption>
+<img src="../../images/katexfont/sdptest.png" alt="XeLaTeX with firamath" />
+<figcaption aria-hidden="true">XeLaTeX with firamath</figcaption>
 </figure>
 <p></p>
-以下是 mathjax 4.0 的效果
+以下是 mathjax 4.0
 <p></p>
 <span class="math display">\[\begin{equation}
 \begin{aligned}

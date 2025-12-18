@@ -12,19 +12,12 @@
     <link rel="stylesheet" href="../../css/pygentize.css" />
     <link rel="stylesheet" href="../../css/chao-theorems.css">
     <link rel="stylesheet" href="../../css/sidenotes.css">
-    <script defer src="../../css/pangu.simple.js"></script>
     <script>
         // page title
         document.addEventListener("DOMContentLoaded", function () {
             const hostname = window.location.hostname;
             document.title = document.title + " | " + hostname;
         });
-
-        // pangu
-        document.addEventListener('DOMContentLoaded', () => {
-            pangu.autoSpacingPage();
-        });
-
         // mathjax
         MathJax = {
             options: {
@@ -99,7 +92,7 @@
             Tags: <a title="All pages tagged 'econometrics'." href="../../tags/econometrics/index.html" rel="tag">econometrics</a>
         
     </div>    
-    <section>
+    <section class="body">
         <blockquote>
 <p></p>
 2022 计量2 课程内容 后面发现问题出在没有学过随机过程

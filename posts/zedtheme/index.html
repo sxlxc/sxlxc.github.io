@@ -12,19 +12,12 @@
     <link rel="stylesheet" href="../../css/pygentize.css" />
     <link rel="stylesheet" href="../../css/chao-theorems.css">
     <link rel="stylesheet" href="../../css/sidenotes.css">
-    <script defer src="../../css/pangu.simple.js"></script>
     <script>
         // page title
         document.addEventListener("DOMContentLoaded", function () {
             const hostname = window.location.hostname;
             document.title = document.title + " | " + hostname;
         });
-
-        // pangu
-        document.addEventListener('DOMContentLoaded', () => {
-            pangu.autoSpacingPage();
-        });
-
         // mathjax
         MathJax = {
             options: {
@@ -101,7 +94,7 @@
             Tags: <a title="All pages tagged 'zzz'." href="../../tags/zzz/index.html" rel="tag">zzz</a>
         
     </div>    
-    <section>
+    <section class="body">
         <a href="https://zed.dev/">Zed</a> is a great editor. I especially like
 the One Light theme in Zed. But for some reasons I cannot fully switch
 to it.

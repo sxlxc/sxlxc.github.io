@@ -12,19 +12,12 @@
     <link rel="stylesheet" href="../../css/pygentize.css" />
     <link rel="stylesheet" href="../../css/chao-theorems.css">
     <link rel="stylesheet" href="../../css/sidenotes.css">
-    <script defer src="../../css/pangu.simple.js"></script>
     <script>
         // page title
         document.addEventListener("DOMContentLoaded", function () {
             const hostname = window.location.hostname;
             document.title = document.title + " | " + hostname;
         });
-
-        // pangu
-        document.addEventListener('DOMContentLoaded', () => {
-            pangu.autoSpacingPage();
-        });
-
         // mathjax
         MathJax = {
             options: {
@@ -101,7 +94,7 @@
             Tags: <a title="All pages tagged 'alg'." href="../../tags/alg/index.html" rel="tag">alg</a>, <a title="All pages tagged 'sage'." href="../../tags/sage/index.html" rel="tag">sage</a>, <a title="All pages tagged 'combinatorics'." href="../../tags/combinatorics/index.html" rel="tag">combinatorics</a>
         
     </div>    
-    <section>
+    <section class="body">
         <blockquote>
 <p></p>
 assuming familiarity with basic matroid thoery

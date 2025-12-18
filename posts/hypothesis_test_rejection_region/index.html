@@ -12,19 +12,12 @@
     <link rel="stylesheet" href="../../css/pygentize.css" />
     <link rel="stylesheet" href="../../css/chao-theorems.css">
     <link rel="stylesheet" href="../../css/sidenotes.css">
-    <script defer src="../../css/pangu.simple.js"></script>
     <script>
         // page title
         document.addEventListener("DOMContentLoaded", function () {
             const hostname = window.location.hostname;
             document.title = document.title + " | " + hostname;
         });
-
-        // pangu
-        document.addEventListener('DOMContentLoaded', () => {
-            pangu.autoSpacingPage();
-        });
-
         // mathjax
         MathJax = {
             options: {
@@ -99,7 +92,7 @@
             Tags: <a title="All pages tagged 'statistics'." href="../../tags/statistics/index.html" rel="tag">statistics</a>
         
     </div>    
-    <section>
+    <section class="body">
         参数的假设检验中有这样一种情况：
 <p></p>
 <span class="math display">\[H_0:\mu\leq\mu_0,\quad

@@ -12,19 +12,12 @@
     <link rel="stylesheet" href="../../css/pygentize.css" />
     <link rel="stylesheet" href="../../css/chao-theorems.css">
     <link rel="stylesheet" href="../../css/sidenotes.css">
-    <script defer src="../../css/pangu.simple.js"></script>
     <script>
         // page title
         document.addEventListener("DOMContentLoaded", function () {
             const hostname = window.location.hostname;
             document.title = document.title + " | " + hostname;
         });
-
-        // pangu
-        document.addEventListener('DOMContentLoaded', () => {
-            pangu.autoSpacingPage();
-        });
-
         // mathjax
         MathJax = {
             options: {
@@ -120,7 +113,7 @@
             Tags: <a title="All pages tagged 'optimization'." href="../../tags/optimization/index.html" rel="tag">optimization</a>, <a title="All pages tagged 'LP'." href="../../tags/LP/index.html" rel="tag">LP</a>
         
     </div>    
-    <section>
+    <section class="body">
         <p></p>
 Proving integral gap of linear programs are generally hard. It would be
 great if one can classify LPs with a constant gap. It is known that

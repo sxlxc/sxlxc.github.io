@@ -12,19 +12,12 @@
     <link rel="stylesheet" href="../../css/pygentize.css" />
     <link rel="stylesheet" href="../../css/chao-theorems.css">
     <link rel="stylesheet" href="../../css/sidenotes.css">
-    <script defer src="../../css/pangu.simple.js"></script>
     <script>
         // page title
         document.addEventListener("DOMContentLoaded", function () {
             const hostname = window.location.hostname;
             document.title = document.title + " | " + hostname;
         });
-
-        // pangu
-        document.addEventListener('DOMContentLoaded', () => {
-            pangu.autoSpacingPage();
-        });
-
         // mathjax
         MathJax = {
             options: {
@@ -116,7 +109,7 @@
             Tags: <a title="All pages tagged 'alg'." href="../../tags/alg/index.html" rel="tag">alg</a>, <a title="All pages tagged 'optimization'." href="../../tags/optimization/index.html" rel="tag">optimization</a>, <a title="All pages tagged 'LP'." href="../../tags/LP/index.html" rel="tag">LP</a>
         
     </div>    
-    <section>
+    <section class="body">
         This is my note on low-dimension linear programming &amp; color
 refinement algorithms.
 <h1 data-number="1" id="the-problem-failed-attempts"><span class="header-section-number">1</span> the problem &amp; failed

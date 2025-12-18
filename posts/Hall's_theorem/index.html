@@ -12,19 +12,12 @@
     <link rel="stylesheet" href="../../css/pygentize.css" />
     <link rel="stylesheet" href="../../css/chao-theorems.css">
     <link rel="stylesheet" href="../../css/sidenotes.css">
-    <script defer src="../../css/pangu.simple.js"></script>
     <script>
         // page title
         document.addEventListener("DOMContentLoaded", function () {
             const hostname = window.location.hostname;
             document.title = document.title + " | " + hostname;
         });
-
-        // pangu
-        document.addEventListener('DOMContentLoaded', () => {
-            pangu.autoSpacingPage();
-        });
-
         // mathjax
         MathJax = {
             options: {
@@ -99,7 +92,7 @@
             Tags: <a title="All pages tagged 'zzz'." href="../../tags/zzz/index.html" rel="tag">zzz</a>
         
     </div>    
-    <section>
+    <section class="body">
         <a href="https://cs.stackexchange.com/questions/50410/perfect-matching-in-a-graph-and-complete-matching-in-bipartite-graph">bipartite
 perfect matching</a>
 指的是二分图某一侧的顶点都和匹配边相连，我之前确实以为 perfect matching

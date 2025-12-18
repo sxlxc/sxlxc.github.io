@@ -12,19 +12,12 @@
     <link rel="stylesheet" href="../../css/pygentize.css" />
     <link rel="stylesheet" href="../../css/chao-theorems.css">
     <link rel="stylesheet" href="../../css/sidenotes.css">
-    <script defer src="../../css/pangu.simple.js"></script>
     <script>
         // page title
         document.addEventListener("DOMContentLoaded", function () {
             const hostname = window.location.hostname;
             document.title = document.title + " | " + hostname;
         });
-
-        // pangu
-        document.addEventListener('DOMContentLoaded', () => {
-            pangu.autoSpacingPage();
-        });
-
         // mathjax
         MathJax = {
             options: {
@@ -101,7 +94,7 @@
             Tags: <a title="All pages tagged 'macos'." href="../../tags/macos/index.html" rel="tag">macos</a>
         
     </div>    
-    <section>
+    <section class="body">
         <blockquote>
 <p></p>
 2024年八月之后, 就没有再使用自己编译的skim了, 键盘快捷键用的不多

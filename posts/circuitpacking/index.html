@@ -12,19 +12,12 @@
     <link rel="stylesheet" href="../../css/pygentize.css" />
     <link rel="stylesheet" href="../../css/chao-theorems.css">
     <link rel="stylesheet" href="../../css/sidenotes.css">
-    <script defer src="../../css/pangu.simple.js"></script>
     <script>
         // page title
         document.addEventListener("DOMContentLoaded", function () {
             const hostname = window.location.hostname;
             document.title = document.title + " | " + hostname;
         });
-
-        // pangu
-        document.addEventListener('DOMContentLoaded', () => {
-            pangu.autoSpacingPage();
-        });
-
         // mathjax
         MathJax = {
             options: {
@@ -112,7 +105,7 @@
             Tags: <a title="All pages tagged 'matroid'." href="../../tags/matroid/index.html" rel="tag">matroid</a>, <a title="All pages tagged 'optimization'." href="../../tags/optimization/index.html" rel="tag">optimization</a>, <a title="All pages tagged 'combinatorics'." href="../../tags/combinatorics/index.html" rel="tag">combinatorics</a>
         
     </div>    
-    <section>
+    <section class="body">
         In the <a href="../../posts/basepacking">previous post</a>, we mainly focus
 on the algorithmic part of integral and fractional base packing and base
 covering. In this post we consider packing and covering of matroid
@@ -233,8 +226,7 @@ A matroid satisfies <span class="math inline">\(\nu_{2,w}=\tau_{2,w}\)</span> if
 minor is isomorphic to <span class="math inline">\(U_{2,4},F_7,F_7^*,M(K_{3,3}),M(K_5^-)\)</span> or
 <span class="math inline">\(M(K)\)</span>, where <span class="math inline">\(K_5^-\)</span> is <span class="math inline">\(K_5\)</span> deleting an edge and <span class="math inline">\(K\)</span> is a special 4-node graph.
 <figure>
-<img src="../images/circuitpacking/K.png" style="width: 250px;" /> Graph
-K
+<img src="../../images/circuitpacking/K.png" style="width: 250px;" /> Graph K
 </figure>
 </div>
 <p></p>

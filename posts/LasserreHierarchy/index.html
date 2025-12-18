@@ -12,19 +12,12 @@
     <link rel="stylesheet" href="../../css/pygentize.css" />
     <link rel="stylesheet" href="../../css/chao-theorems.css">
     <link rel="stylesheet" href="../../css/sidenotes.css">
-    <script defer src="../../css/pangu.simple.js"></script>
     <script>
         // page title
         document.addEventListener("DOMContentLoaded", function () {
             const hostname = window.location.hostname;
             document.title = document.title + " | " + hostname;
         });
-
-        // pangu
-        document.addEventListener('DOMContentLoaded', () => {
-            pangu.autoSpacingPage();
-        });
-
         // mathjax
         MathJax = {
             options: {
@@ -133,7 +126,7 @@
             Tags: <a title="All pages tagged 'optimization'." href="../../tags/optimization/index.html" rel="tag">optimization</a>, <a title="All pages tagged 'LP'." href="../../tags/LP/index.html" rel="tag">LP</a>
         
     </div>    
-    <section>
+    <section class="body">
         <p></p>
 Useful links:
 <ol type="1">
@@ -208,7 +201,7 @@ distribution over <span class="math inline">\((0,0),(1,0)\)</span> and
 <span class="math inline">\((1,1)\)</span>. The idea is to iteratively
 prune this area.
 <figure>
-<img src="../images/lasserre/feasiblepoints.png" alt="2D example" style="width: 300px;display: block; margin: auto;" />
+<img src="../../images/lasserre/feasiblepoints.png" alt="2D example" style="width: 300px;display: block; margin: auto;" />
 </figure>
 <p></p>
 Now we need to think about how to represent all possible joint

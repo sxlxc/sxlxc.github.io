@@ -12,19 +12,12 @@
     <link rel="stylesheet" href="../../css/pygentize.css" />
     <link rel="stylesheet" href="../../css/chao-theorems.css">
     <link rel="stylesheet" href="../../css/sidenotes.css">
-    <script defer src="../../css/pangu.simple.js"></script>
     <script>
         // page title
         document.addEventListener("DOMContentLoaded", function () {
             const hostname = window.location.hostname;
             document.title = document.title + " | " + hostname;
         });
-
-        // pangu
-        document.addEventListener('DOMContentLoaded', () => {
-            pangu.autoSpacingPage();
-        });
-
         // mathjax
         MathJax = {
             options: {
@@ -99,7 +92,7 @@
             Tags: <a title="All pages tagged 'zzz'." href="../../tags/zzz/index.html" rel="tag">zzz</a>
         
     </div>    
-    <section>
+    <section class="body">
         最近遇到一个问题：给出二分图<span class="math inline">\(G(V_1,V_2,E)\)</span>，<span class="math inline">\(E\subset V_1 \times
 V_2\)</span>求两侧顶点排序使得边的交叉数量最少。
 <p></p>
@@ -154,7 +147,7 @@ Search</a>如果可以收敛到最优解当然很好(保持一次操作仍然是
 <h4 data-number="0.3.1" id="固定一侧的最优解是否是np-hard"><span class="header-section-number">0.3.1</span> (5/18)
 固定一侧的最优解是否是NP-Hard</h4>
 <p></p>
-<sub></sub>另外我觉得固定一侧找另一侧最优解应该也是 NP-Hard <sub></sub>
+~~另外我觉得固定一侧找另一侧最优解应该也是 NP-Hard ~~
 <p></p>
 <del>大概类似<a href="https://learn.fmi.uni-sofia.bg/pluginfile.php/160153/mod_resource/content/4/Crossing-Number-Is-NP-Complete_Garey_Johnson.pdf">Crossing-Number-Is-NP-Complete_Garey_Johnson.pdf</a>证明
 bipartite crossing的方法，从 linear arrangement 归约，考虑一个linear

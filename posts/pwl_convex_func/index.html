@@ -12,19 +12,12 @@
     <link rel="stylesheet" href="../../css/pygentize.css" />
     <link rel="stylesheet" href="../../css/chao-theorems.css">
     <link rel="stylesheet" href="../../css/sidenotes.css">
-    <script defer src="../../css/pangu.simple.js"></script>
     <script>
         // page title
         document.addEventListener("DOMContentLoaded", function () {
             const hostname = window.location.hostname;
             document.title = document.title + " | " + hostname;
         });
-
-        // pangu
-        document.addEventListener('DOMContentLoaded', () => {
-            pangu.autoSpacingPage();
-        });
-
         // mathjax
         MathJax = {
             options: {
@@ -116,7 +109,7 @@
             Tags: <a title="All pages tagged 'alg'." href="../../tags/alg/index.html" rel="tag">alg</a>, <a title="All pages tagged 'optimization'." href="../../tags/optimization/index.html" rel="tag">optimization</a>
         
     </div>    
-    <section>
+    <section class="body">
         <p></p>
 This post is a note on epigraphs, infimal convolution, Minkowski sum
 &amp; convex conjugate of piecewise linear convex functions in <span class="math inline">\(\R^d\)</span>. I want to provide proofs for

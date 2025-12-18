@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="googlebot" content="noindex">
-    <title>Posts tagged "matroid"</title>
+    <title>pangu.hs ?</title>
     <link rel="stylesheet" href="../../css/fonts.css" />
     <link rel="stylesheet" href="../../css/default.css" />
     <link rel="stylesheet" href="../../css/pygentize.css" />
@@ -77,61 +77,42 @@
         </header>
 
         <main role="main">
-            <h1 class="pagetitle">Posts tagged "matroid"</h1>
-            <ul>
-    
-        
-            
-        <li>
-            <a href="../../posts/matroidgirth/index.html">Matroid girth</a> <span class="langtag">[en]</span> - August 12, 2025
-        </li>
-            
-        
-    
-        
-            
-        <li>
-            <a href="../../posts/circuitpacking/index.html">Matroid circuit packing and covering</a> <span class="langtag">[en]</span> - June 15, 2025
-        </li>
-            
-        
-    
-        
-            
-        <li>
-            <a href="../../posts/detectingSBO/index.html">Detecting base orderable matroids is NP-hard</a> <span class="langtag">[en]</span> - March 22, 2025
-        </li>
-            
-        
-    
+            <h1 class="pagetitle">pangu.hs ?</h1>
+            <article>
+    <section class="subtitle">
         
         
-    
+        <br><span style="font-weight: bold; color: red;">Draft</span>
         
-            
-        <li>
-            <a href="../../posts/graphic_matroid_representation/index.html">Graphic matroid representation and cocircuit transversal</a> <span class="langtag">[en]</span> - January  9, 2025
-        </li>
-            
+    </section>
+    <section class="header">
+        Posted on December 15, 2025
         
-    
+    </section>
+    <div class="info">
         
-            
-        <li>
-            <a href="../../posts/basepacking/index.html">Matroid base packing and covering</a> <span class="langtag">[en]</span> - January  4, 2025
-        </li>
-            
+            Tags: <a title="All pages tagged 'hakyll'." href="../../tags/hakyll/index.html" rel="tag">hakyll</a>
         
-    
-        
-            
-        <li>
-            <a href="../../posts/tropical_bases/index.html">Tropical bases and matroid circuits</a> <span class="langtag">[en]</span> - July 11, 2024
-        </li>
-            
-        
-    
-</ul>
+    </div>    
+    <section class="body">
+        <a href="https://github.com/vinta/pangu.js">pangu.js</a>
+是给兼有中英文字符的文本中插入空格的工具。
+<p></p>
+我觉得这种工具很有用。这个网站曾经使用<a href="https://www.npmjs.com/package/pangu.simple">一个简化版本</a>。
+不过js版本的工具会导致整个网页加载很慢，如果能在编译的时候运行就会变得更好。
+<p></p>
+最简单的办法其实是在 hakyll 生成 html 之后运行一下 pangu。
+有人会想把pangu也变成一个 pandoc filter。在 pandoc AST
+上判断中英文字符连接情况有点复杂，不过没有你想的那么复杂。
+pangu在每个段落上的工作是独立的，不会需要知道别的段落的信息，在 pandoc
+AST 当中，每个段落都是一个 <code>Block</code>，constructor是
+<code>Para [Inline]</code>。而 <a href="https://hackage.haskell.org/package/pandoc-types-1.23.1/docs/Text-Pandoc-Definition.html#t:Inline"><code>Inline</code></a>
+包含了所有需要考虑的其他元素。 所以只需要在一个 <code>Inline</code> list
+当中检查每个 element 内部是否需要空格，以及 list
+两个元素之间是否需要空格。我们并不关心遍历 AST 的时候上一个 leaf
+是什么。
+    </section>
+</article>
 
         </main>
 

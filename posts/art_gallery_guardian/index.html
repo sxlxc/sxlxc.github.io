@@ -12,19 +12,12 @@
     <link rel="stylesheet" href="../../css/pygentize.css" />
     <link rel="stylesheet" href="../../css/chao-theorems.css">
     <link rel="stylesheet" href="../../css/sidenotes.css">
-    <script defer src="../../css/pangu.simple.js"></script>
     <script>
         // page title
         document.addEventListener("DOMContentLoaded", function () {
             const hostname = window.location.hostname;
             document.title = document.title + " | " + hostname;
         });
-
-        // pangu
-        document.addEventListener('DOMContentLoaded', () => {
-            pangu.autoSpacingPage();
-        });
-
         // mathjax
         MathJax = {
             options: {
@@ -101,7 +94,7 @@
             Tags: <a title="All pages tagged 'CG'." href="../../tags/CG/index.html" rel="tag">CG</a>
         
     </div>    
-    <section>
+    <section class="body">
         I read this problem in <a href="https://link.springer.com/book/10.1007/978-3-540-77974-2"><em>Computational
 Geometry:Algorithms and Applications</em></a>.
 <p></p>
@@ -135,7 +128,7 @@ vertices(degree &gt; π)…
 <p></p>
 Cameras can do even better than convex partitioning.
 <figure>
-<img src="../images/art_gallery_guardian/ex.png" alt="1 camera is sufficient" style="width: 250px;" />
+<img src="../../images/art_gallery_guardian/ex.png" alt="1 camera is sufficient" style="width: 250px;" />
 1 camera is sufficient
 </figure>
 <p></p>

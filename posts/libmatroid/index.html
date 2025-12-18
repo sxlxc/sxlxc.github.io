@@ -12,19 +12,12 @@
     <link rel="stylesheet" href="../../css/pygentize.css" />
     <link rel="stylesheet" href="../../css/chao-theorems.css">
     <link rel="stylesheet" href="../../css/sidenotes.css">
-    <script defer src="../../css/pangu.simple.js"></script>
     <script>
         // page title
         document.addEventListener("DOMContentLoaded", function () {
             const hostname = window.location.hostname;
             document.title = document.title + " | " + hostname;
         });
-
-        // pangu
-        document.addEventListener('DOMContentLoaded', () => {
-            pangu.autoSpacingPage();
-        });
-
         // mathjax
         MathJax = {
             options: {
@@ -103,7 +96,7 @@
             Tags: <a title="All pages tagged 'matroid'." href="../../tags/matroid/index.html" rel="tag">matroid</a>
         
     </div>    
-    <section>
+    <section class="body">
         想要写一个更快的 matroid 算法的库, 用来和 gurobi
 一起跑点测试验证一些猜想.
 <p></p>
